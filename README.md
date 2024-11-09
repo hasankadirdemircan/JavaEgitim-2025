@@ -1,4 +1,2 @@
 # JavaEgitim-2025
-Java Eğitim 2025 örnek kodlamalarını
-
-test
+Java Eğitim 2025 örnek kodlamalarını içerir.
