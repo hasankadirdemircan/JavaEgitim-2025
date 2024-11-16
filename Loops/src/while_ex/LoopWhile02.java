@@ -1,3 +1,5 @@
+package while_ex;
+
 import java.util.Scanner;
 
 public class LoopWhile02 {
