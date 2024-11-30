@@ -1,6 +1,10 @@
+package class_object;
+
 public class CustomerTest {
 
     public static void main(String[] args) {
+
+        int number = 5;
         Customer hasan = new Customer();
         hasan.firstName = "hasan kadir";
         hasan.lastName = "demircan";

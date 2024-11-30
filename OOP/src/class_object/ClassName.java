@@ -1,3 +1,5 @@
+package class_object;
+
 public class ClassName {
      public int number = 11;
     public static int number2 = 11;

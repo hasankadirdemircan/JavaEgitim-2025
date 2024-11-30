@@ -1,3 +1,5 @@
+package class_object;
+
 public class Customer {
 
     String id;

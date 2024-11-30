@@ -1,3 +1,5 @@
+package class_object;
+
 import java.util.Scanner;
 
 public class ClassNameTest {
