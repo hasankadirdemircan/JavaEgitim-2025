@@ -2,8 +2,9 @@ package polymorphism.override;
 
 public class Main {
     public static void main(String[] args) {
-
-        System.out.println("animal...");
+        Animal animal = new Animal();
+        animal.sound();
+        System.out.println("dogAnimal...");
         Animal dogAnimal = new Dog();
         //Dog dog2 = new Animal(); sol tarafa subClass , sağ tarafa superClass yazamazsın
         dogAnimal.sound();
