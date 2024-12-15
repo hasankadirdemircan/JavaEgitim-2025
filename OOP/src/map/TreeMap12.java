@@ -1,6 +1,8 @@
 package map;
 
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 import java.util.TreeMap;
 
 public class TreeMap12 {
@@ -24,6 +26,10 @@ public class TreeMap12 {
         numbers2.put("Third", 3);
         numbers2.put("Fourth", 4);
         System.out.println("TreeMap2: " + numbers2);
+
+        numbers2.clear();
+       // numbers2.removeAll(); // its in List interface not in MAP
+        System.out.println("after clear TreeMap2: " + numbers2);
     }
 
     // Creating a comparator class
