@@ -5,29 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2c0e046-86e4-4b2b-83f1-87a197875010" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/design_patterns/factory_design_pattern/Audi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design_patterns/factory_design_pattern/Bmw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design_patterns/factory_design_pattern/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design_patterns/factory_design_pattern/CarFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design_patterns/factory_design_pattern/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design_patterns/factory_design_pattern/Porsche.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design_patterns/observer_design_pattern/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design_patterns/observer_design_pattern/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design_patterns/observer_design_pattern/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design_patterns/observer_design_pattern/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design_patterns/observer_design_pattern/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design_patterns/singleton_design_pattern/EagerSingletonExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design_patterns/singleton_design_pattern/LazySingletonExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design_patterns/singleton_design_pattern/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design_patterns/singleton_design_pattern/ThreadSafeSingletonExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GitlabLint.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aggregation_composition/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aggregation_composition/AggregateEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aggregation_composition/CompositeEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aggregation_composition/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +105,7 @@
     "Application.WeakHashMap01.executor": "Run",
     "Application.WeakHashMap02.executor": "Run",
     "Application.abstraction.Main.executor": "Run",
+    "Application.aggregation_composition.Main.executor": "Run",
     "Application.design_patterns.factory_design_pattern.Main.executor": "Run",
     "Application.design_patterns.singleton_design_pattern.Main.executor": "Run",
     "Application.polymorphism.Main.executor": "Run",
@@ -142,7 +125,7 @@
       <recent name="inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.design_patterns.factory_design_pattern.Main">
+  <component name="RunManager" selected="Application.aggregation_composition.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-23" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -158,8 +141,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreeSet02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="set.TreeSet02" />
+    <configuration name="TreeSet03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="set.TreeSet03" />
       <module name="OOP" />
       <extension name="coverage">
         <pattern>
@@ -171,12 +154,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreeSet03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="set.TreeSet03" />
+    <configuration name="aggregation_composition.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aggregation_composition.Main" />
       <module name="OOP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="set.*" />
+          <option name="PATTERN" value="aggregation_composition.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -211,19 +194,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.aggregation_composition.Main" />
       <item itemvalue="Application.design_patterns.factory_design_pattern.Main" />
       <item itemvalue="Application.design_patterns.singleton_design_pattern.Main" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.TreeSet02" />
       <item itemvalue="Application.TreeSet03" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.aggregation_composition.Main" />
         <item itemvalue="Application.design_patterns.factory_design_pattern.Main" />
         <item itemvalue="Application.design_patterns.singleton_design_pattern.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.TreeSet03" />
-        <item itemvalue="Application.TreeSet02" />
       </list>
     </recent_temporary>
   </component>
