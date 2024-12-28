@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2c0e046-86e4-4b2b-83f1-87a197875010" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aggregation_composition/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aggregation_composition/AggregateEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aggregation_composition/CompositeEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aggregation_composition/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread/CompletableFuture01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread/Main01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread/Main02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread/SumThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread/SynchronizedExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread/Thread01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread/Thread02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread/ThreadBankExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread/ThreadExample01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread/ThreadSumExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,13 +98,21 @@
     "Application.LinkedHashSet03.executor": "Debug",
     "Application.LinkedList01.executor": "Run",
     "Application.Main.executor": "Debug",
+    "Application.Main01.executor": "Run",
+    "Application.Main02.executor": "Run",
     "Application.Main2.executor": "Run",
     "Application.MainCalculator.executor": "Run",
     "Application.Queue01.executor": "Run",
     "Application.ShapeMain.executor": "Run",
     "Application.StringImmutable.executor": "Run",
+    "Application.SynchronizedExample.executor": "Run",
     "Application.TestObject02.executor": "Debug",
     "Application.TheHurdleRace.executor": "Debug",
+    "Application.ThreadBankExample (1).executor": "Run",
+    "Application.ThreadBankExample (2).executor": "Run",
+    "Application.ThreadBankExample.executor": "Run",
+    "Application.ThreadExample01.executor": "Run",
+    "Application.ThreadSumExample.executor": "Run",
     "Application.TreeSet01.executor": "Debug",
     "Application.TreeSet02.executor": "Run",
     "Application.TreeSet03.executor": "Run",
@@ -125,15 +139,13 @@
       <recent name="inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.aggregation_composition.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-23" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="design_patterns.observer_design_pattern.Main" />
+  <component name="RunManager" selected="Application.ThreadBankExample (2)">
+    <configuration name="ThreadBankExample (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.ThreadBankExample" />
       <module name="OOP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="design_patterns.observer_design_pattern.*" />
+          <option name="PATTERN" value="thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,12 +153,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreeSet03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="set.TreeSet03" />
+    <configuration name="ThreadBankExample (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.ThreadBankExample" />
       <module name="OOP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="set.*" />
+          <option name="PATTERN" value="thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,12 +166,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="aggregation_composition.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aggregation_composition.Main" />
+    <configuration name="ThreadBankExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.ThreadBankExample" />
       <module name="OOP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aggregation_composition.*" />
+          <option name="PATTERN" value="thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -167,12 +179,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="design_patterns.factory_design_pattern.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="design_patterns.factory_design_pattern.Main" />
+    <configuration name="ThreadExample01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.ThreadExample01" />
       <module name="OOP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="design_patterns.factory_design_pattern.*" />
+          <option name="PATTERN" value="thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -180,12 +192,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="design_patterns.singleton_design_pattern.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="design_patterns.singleton_design_pattern.Main" />
+    <configuration name="ThreadSumExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.ThreadSumExample" />
       <module name="OOP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="design_patterns.singleton_design_pattern.*" />
+          <option name="PATTERN" value="thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -194,19 +206,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.aggregation_composition.Main" />
-      <item itemvalue="Application.design_patterns.factory_design_pattern.Main" />
-      <item itemvalue="Application.design_patterns.singleton_design_pattern.Main" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.TreeSet03" />
+      <item itemvalue="Application.ThreadBankExample" />
+      <item itemvalue="Application.ThreadBankExample (1)" />
+      <item itemvalue="Application.ThreadBankExample (2)" />
+      <item itemvalue="Application.ThreadExample01" />
+      <item itemvalue="Application.ThreadSumExample" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.aggregation_composition.Main" />
-        <item itemvalue="Application.design_patterns.factory_design_pattern.Main" />
-        <item itemvalue="Application.design_patterns.singleton_design_pattern.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.TreeSet03" />
+        <item itemvalue="Application.ThreadBankExample (2)" />
+        <item itemvalue="Application.ThreadBankExample" />
+        <item itemvalue="Application.ThreadBankExample (1)" />
+        <item itemvalue="Application.ThreadExample01" />
+        <item itemvalue="Application.ThreadSumExample" />
       </list>
     </recent_temporary>
   </component>
@@ -468,6 +480,11 @@
           <url>file://$PROJECT_DIR$/src/design_patterns/singleton_design_pattern/LazySingletonExample.java</url>
           <line>12</line>
           <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/thread/ThreadSumExample.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
