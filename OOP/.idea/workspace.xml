@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2c0e046-86e4-4b2b-83f1-87a197875010" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/thread/CompletableFuture01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thread/Main01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thread/Main02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thread/SumThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thread/SynchronizedExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thread/Thread01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thread/Thread02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thread/ThreadBankExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thread/ThreadExample01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thread/ThreadSumExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b2c0e046-86e4-4b2b-83f1-87a197875010" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
