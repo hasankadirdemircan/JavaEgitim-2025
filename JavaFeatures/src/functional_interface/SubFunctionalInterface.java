@@ -1,3 +1,5 @@
+package functional_interface;
+
 @FunctionalInterface
 public interface SubFunctionalInterface extends FunctionalInterface01 {
 

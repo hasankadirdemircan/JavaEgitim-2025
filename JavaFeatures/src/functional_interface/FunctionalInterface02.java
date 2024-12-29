@@ -1,3 +1,5 @@
+package functional_interface;
+
 import java.lang.Object;
 
 @FunctionalInterface
