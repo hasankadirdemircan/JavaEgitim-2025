@@ -1,6 +1,10 @@
 package com.example.spring_data;
 
+import com.example.spring_data.model.Course;
 import com.example.spring_data.model.Student;
+import com.example.spring_data.model.StudentCourse;
+import com.example.spring_data.repository.CourseRepository;
+import com.example.spring_data.repository.StudentCourseRepository;
 import com.example.spring_data.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -16,6 +20,12 @@ public class SpringDataApplication implements CommandLineRunner {
 	@Autowired
 	private StudentRepository studentRepository;
 
+	@Autowired
+	private CourseRepository courseRepository;
+
+	@Autowired
+	private StudentCourseRepository studentCourseRepository;
+
 	public static void main(String[] args) {
 		SpringApplication.run(SpringDataApplication.class, args);
 	}
@@ -23,15 +33,46 @@ public class SpringDataApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		System.out.println("test");
+		deleteStudent();
+	//	findCourseNameByStudentIdJPQL();
+		//findCourseNameByStudentId();
+		//saveStudentAndCourseRelation();
+		//saveCourse();
 		//save();
 		//select();
 		//selectById();
 		//update();
 		//selectWithJPQLAndNative();
 		//updateWithJPQL();
-		updateWithNative();
+		//updateWithNative();
 	}
 
+	public void deleteStudent() {
+		studentRepository.deleteById(202L);
+	}
+
+	public void findCourseNameByStudentId() {
+		String courseName = courseRepository.findCourseNameByStudentId(152L).orElseGet(() -> "");
+		System.out.println("courseName : " + courseName);
+	}
+
+	public void findCourseNameByStudentIdJPQL() {
+		String courseName = courseRepository.findCourseNameByStudentId(152L).orElseGet(() -> "");
+		System.out.println("courseName : " + courseName);
+	}
+	public void saveStudentAndCourseRelation() {
+		StudentCourse studentCourse = new StudentCourse();
+		studentCourse.setCourseId(102L);
+		studentCourse.setStudentId(252L);
+
+		studentCourseRepository.save(studentCourse);
+	}
+
+	public void saveCourse() {
+		Course course = new Course();
+		course.setName("fizik");
+		courseRepository.save(course);
+	}
 	public void updateWithNative() {
 		int affectedRow = studentRepository.updateAgeAndNameNative(126L, "ABC", 100);
 		System.out.println("affectedRow : " + affectedRow);
@@ -49,7 +90,6 @@ public class SpringDataApplication implements CommandLineRunner {
 	}
 	public void update() {
 		Student student = new Student();
-		student.setStudentNo(126L);
 		student.setName("asdadsa");
 		student.setLastName("dsdasdasdasdeeee");
 		student.setAge(24);
@@ -69,7 +109,6 @@ public class SpringDataApplication implements CommandLineRunner {
 
 	public void save() {
 		Student student = new Student();
-		student.setStudentNo(125L);
 		student.setName("kadir");
 		student.setLastName("Demircan");
 		student.setAge(39);

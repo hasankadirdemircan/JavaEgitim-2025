@@ -5,20 +5,14 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "student")
+@Table
 @Getter
 @Setter
-public class Student {
+public class Course {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "student_no")
-    private Long studentNo;
+    private Long id;
 
-   // @Column(name = "name")
     private String name;
-
-    @Column(name = "last_name")
-    private String lastName;
-    private int age;
 }
