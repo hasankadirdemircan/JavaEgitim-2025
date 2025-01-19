@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>HTML Forms</h2>
+    <form action="methodCall">
+        <label for="fname">First name:</label><br>
+        <input type="text" placeholder="adinizi giriniz."><br>
+        <label>Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="soyad"><br><br>
+        <input type="checkbox">
+        <input type="radio">
+        <input type="button">
+        <input type="password">
+        <input type="submit" value="Submit">
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo s</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <textarea name="message" rows="10" cols="30">
+            The cat was playing in the garden.
+            </textarea>
+
+        <textarea name="message" style="width:200px; height:600px;">
+                The cat was playing in the garden.
+                </textarea>
+        <input type="file" id="myfile" name="myfile">
+
+        <input type="file">
+        <input type="time">
+        <input type="date">
+    </form>
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <form action="/action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </form>
+
+</body>
+
+</html>
