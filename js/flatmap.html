@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The flatMap() Method</h2>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        const myArr = [1, 2, 3, 4, 5, 6];
+        const newArr = myArr.map((x) => x * 2);
+        document.getElementById("demo").innerHTML = newArr;
+
+        const sentences =
+            ["Hello world", "How are you?", "JavaScript is fun"];
+
+        const words =
+            sentences.flatMap(sentence => sentence.split(' '));
+        console.log(words);
+    </script>
+</body>
+
+</html>

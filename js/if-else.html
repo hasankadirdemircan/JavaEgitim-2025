@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>JavaScript if .. else</h2>
+    <p>A time-based greeting:</p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        const date = new Date();
+        const hour = date.getHours();
+        let greeting;
+        if (hour < 18) {
+            greeting = "Good day";
+        } else {
+            greeting = "Good evening";
+        }
+        document.getElementById("demo2").innerHTML = hour;
+        document.getElementById("demo").innerHTML = greeting;
+        document.getElementById("demo3").innerHTML = date;
+    </script>
+</body>
+
+</html>
