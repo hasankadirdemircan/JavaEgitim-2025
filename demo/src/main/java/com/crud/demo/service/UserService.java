@@ -2,10 +2,12 @@ package com.crud.demo.service;
 
 import com.crud.demo.model.User;
 import com.crud.demo.repository.UserRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Slf4j
 @Service
 public class UserService {
 
@@ -28,7 +30,10 @@ public class UserService {
     }
 
     public User getUserById(Long id) {
-        return userRepository.findById(id).orElseThrow(() -> new RuntimeException("user does not exists"));
+        return userRepository.findById(id).orElseThrow(() -> {
+            log.error("user does not exists userid : {}", id);
+            return new RuntimeException("user does not exists");
+        });
     }
 
 }

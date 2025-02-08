@@ -2,6 +2,7 @@ package com.crud.demo.controller;
 
 import com.crud.demo.model.User;
 import com.crud.demo.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/users")
+@Slf4j
 public class UserController {
 
     private final UserService userService;
@@ -32,6 +34,8 @@ public class UserController {
 
     @PostMapping("/create")
     public ResponseEntity<User> createUser(@RequestBody User user) {
+        log.info("create user request {}", user);
+        log.error("failed to create ");
         return ResponseEntity.ok(userService.createUser(user));
     }
 
