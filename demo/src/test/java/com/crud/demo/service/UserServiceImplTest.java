@@ -3,6 +3,7 @@ package com.crud.demo.service;
 import com.crud.demo.helper.DoFactory;
 import com.crud.demo.model.User;
 import com.crud.demo.repository.UserRepository;
+import com.crud.demo.service.impl.UserServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -15,13 +16,13 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.List;
 import java.util.Optional;
 
-class UserServiceTest {
+class UserServiceImplTest {
 
     @Mock
     private UserRepository userRepository;
 
     @InjectMocks
-    private UserService userService;
+    private UserServiceImpl userServiceImpl;
 
     private DoFactory doFactory;
 
@@ -43,7 +44,7 @@ class UserServiceTest {
         when(userRepository.findById(userId)).thenReturn(userOptional);
 
         //then
-        String response = userService.testUser(userId);
+        String response = userServiceImpl.testUser(userId);
 
         //assert
         assertEquals("500 TL win", response);
@@ -63,7 +64,7 @@ class UserServiceTest {
         when(userRepository.findById(userId)).thenReturn(userOptional);
 
         //then
-        String response = userService.testUser(userId);
+        String response = userServiceImpl.testUser(userId);
 
         //assert
         assertEquals("1000 TL win", response);
@@ -82,7 +83,7 @@ class UserServiceTest {
         when(userRepository.findById(userId)).thenReturn(userOptional);
 
         //then
-        String response = userService.testUser(userId);
+        String response = userServiceImpl.testUser(userId);
 
         //assert
         assertEquals("10 TL win", response);
@@ -99,7 +100,7 @@ class UserServiceTest {
 
         //then
         RuntimeException exception = assertThrows(RuntimeException.class, () -> {
-            userService.testUser(userId);
+            userServiceImpl.testUser(userId);
         });
 
         //assert
@@ -116,7 +117,7 @@ class UserServiceTest {
         when(userRepository.findAll()).thenReturn(userList);
 
         //then
-        List<User> response = userService.getUserList();
+        List<User> response = userServiceImpl.getUserList();
 
         //assert
         assertEquals(userList.size(), response.size());
