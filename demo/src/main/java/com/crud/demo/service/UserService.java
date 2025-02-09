@@ -36,4 +36,18 @@ public class UserService {
         });
     }
 
+    public String testUser(Long id) {
+        User user = userRepository.findById(id).orElseThrow(() -> {
+            log.error("user does not exists userid : {}", id);
+            return new RuntimeException("user does not exists");
+        });
+
+        if (user.getAge() > 20 && user.getAge() < 40) {
+            return "500 TL win";
+        } else if (user.getAge() > 40) {
+            return "1000 TL win";
+        } else {
+            return "10 TL win";
+        }
+    }
 }
